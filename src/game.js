@@ -138,6 +138,13 @@ export default function createGame() {
     }
   }
 
+  function addPoint(command) {
+    const player = state.players[command.playerId]
+    player.points += 1;
+    state.players[command.playerId] = player
+    notifyAll(command)
+  }
+
   function checkForFruitCollision(playerId) {
     const player = state.players[playerId]
 
@@ -155,7 +162,6 @@ export default function createGame() {
         notifyAll(command)
 
         removeFruit({fruitId: fruitId, playerId: playerId})
-
       }
     }
   }
@@ -169,6 +175,7 @@ export default function createGame() {
     removeFruit,
     setState,
     subscribe,
-    start
+    start,
+    addPoint
   }
 }

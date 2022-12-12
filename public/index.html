@@ -33,8 +33,6 @@
       const keyboardListener = createKeyboardListener(document)
       const socket = io();
 
-      let currentPlayerId;
-
       socket.on('connect', () => {
         const playerId = socket.id
         console.log(`connected on server with id ${playerId}`)
@@ -77,6 +75,9 @@
 
       socket.on('get-fruit', (command) => {
         console.log(`>> get fruit ${command.fruitId} by player ${command.playerId}`)
+        if(command.playerId === socket.id) 
+          socket.emit('get-fruit', command)
+        
       })
 
     </script>

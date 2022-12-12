@@ -34,12 +34,13 @@ sockets.on('connection', (socket) => {
   })
 
   socket.on('move-player', (command) => {
-    console.log(game.state.fruits)
     game.movePlayer(command)
   })
 
   socket.on('get-fruit', (command) => {
-    console.log(`Player ${socket.id} get fruit ${command.fruitId}`)
+    console.log(`Player ${command.playerId} get fruit ${command.fruitId}`)
+    if(socket.id == command.playerId)
+      game.addFruit()
   })
 })
 
