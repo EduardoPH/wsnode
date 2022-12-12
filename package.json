@@ -9,7 +9,7 @@
     "socket.io": "^4.5.4"
   },
   "scripts": {
-    "start": "yarn nodemon",
+    "start": "node ./src/server/server.js",
     "build": "yarn nodemon"
   },
   "type": "module",
