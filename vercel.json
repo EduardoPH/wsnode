@@ -4,6 +4,10 @@
     {
       "src": "src/server/server.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "src/**/*.js",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
@@ -22,5 +26,8 @@
   ],
   "env": {
     "PORT": "3030"
+  },
+  "scripts": {
+    "build": "cp -R src/*.js public/"
   }
 }
