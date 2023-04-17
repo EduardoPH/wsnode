@@ -11,6 +11,7 @@
     { "src": "/.*", "dest": "src/server/server.js" }
   ],
   "env": {
-    "PORT": "3030"
+    "PORT": "3030",
+    "NODE_ENV": "production"
   }
 }
