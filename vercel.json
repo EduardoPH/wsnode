@@ -26,8 +26,5 @@
   ],
   "env": {
     "PORT": "3030"
-  },
-  "scripts": {
-    "build": "cp -R src/*.js public/"
   }
 }
