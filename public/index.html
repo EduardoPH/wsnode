@@ -35,7 +35,7 @@
 
       socket.on('connect', () => {
         const playerId = socket.id
-        console.log(`connected on server with id ${playerId}`)
+        console.log(`connected on server with id > ${playerId}`)
 
         const screen = document.getElementById('screen');
         renderScreen(game, screen, requestAnimationFrame, playerId);
