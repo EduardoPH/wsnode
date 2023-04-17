@@ -5,8 +5,8 @@
     { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/keyboardListener.js", "dest": "src/keyboardListener.js" },
-    { "src": "/renderScreen.js", "dest": "src/renderScreen.js" },
+    { "src": "/keyboardlistener.js", "dest": "src/keyboardlistener.js" },
+    { "src": "/renderscreen.js", "dest": "src/renderscreen.js" },
     { "src": "/.*", "dest": "src/server/server.js" }
   ],
   "env": {
