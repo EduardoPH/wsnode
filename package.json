@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "nodemon",
-    "build": ""
+    "build": "cp -R src/*.js public/"
   },
   "type": "module",
   "devDependencies": {
