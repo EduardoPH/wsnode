@@ -2,6 +2,8 @@ import express from "express";
 import http from "http";
 import * as socketio from "socket.io";
 import createGame from "../game.js";
+import '../keyboardlistener.js'
+import '../renderscreen.js'
 import path from 'path';
 
 
