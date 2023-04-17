@@ -2,13 +2,19 @@ import express from "express";
 import http from "http";
 import * as socketio from "socket.io";
 import createGame from "../game.js";
+import path from 'path';
+
+
 
 const app = express();
 const server = http.createServer(app);
 const sockets = new socketio.Server(server)
 
-app.use(express.static('public'));
-app.use(express.static('src'));
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
+app.use(express.static(path.join(__dirname, '../../public')));
+
+app.use(express.static(path.join(__dirname, '../../src')));
 
 const game = createGame()
 
