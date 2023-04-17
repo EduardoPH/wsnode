@@ -18,5 +18,16 @@
   ],
   "env": {
     "PORT": "3030"
+  },
+  "static": {
+    "directory": "public,src",
+    "public": true,
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
