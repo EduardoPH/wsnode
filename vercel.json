@@ -5,11 +5,9 @@
     { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/.*", "dest": "src/server/server.js" },
-      {
-        "src": "src/keyboardListener",
-        "dest": "src/keyboardListener.js"
-      }
+    { "src": "/keyboardListener.js", "dest": "src/keyboardListener.js" },
+    { "src": "/renderScreen.js", "dest": "src/renderScreen.js" },
+    { "src": "/.*", "dest": "src/server/server.js" }
   ],
   "env": {
     "PORT": "3030"
