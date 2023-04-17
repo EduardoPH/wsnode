@@ -8,7 +8,9 @@ import path from 'path';
 
 const app = express();
 const server = http.createServer(app);
-const sockets = new socketio.Server(server)
+const sockets = new socketio.Server(server, {
+  pingTimeout: 60000
+})
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
