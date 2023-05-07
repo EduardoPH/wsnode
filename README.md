@@ -10,18 +10,9 @@ O jogo consiste em coletar as frutinhas que dão spaw aleatóriamente pela sala.
   <a href="#"><img src="https://img.shields.io/badge/WebSocket-%238000FF.svg?style=for-the-badge&logo=websocket&logoColor=white"></a>
 </p>
 
-<p align="center">
-  <img src="./image01.png">
-</p>
-
-
-## Demonstração
-
-https://cuponsgenerate.vercel.app/
-
 ## Instalação
 
-Clone o repositório com ```https://github.com/EduardoPH/CuponsGenerator```
+Clone o repositório com ```https://github.com/EduardoPH/wsnode```
 
 Acesse a pasta do repositório e instale as dependências com ```npm i``` ou ```yarn install```
 
