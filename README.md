@@ -1,6 +1,6 @@
 # WebSocket Node
 
-Este projeto objetiva o desenvolvimento de um jogo WEB com o objetivo pedagógico de trabalhar com o protocólo WebSocket. 
+Este projeto objetiva o desenvolvimento de um jogo WEB multiplayer com o objetivo pedagógico de trabalhar com o protocólo WebSocket. 
 O jogo consiste em coletar as frutinhas que dão spaw aleatóriamente pela sala.
 
 <p align="center">
